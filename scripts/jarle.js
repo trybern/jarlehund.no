@@ -1,3 +1,5 @@
+/* TODO: Lag json-fil med bildelenker, slik at vi kan automatisere telling OG legge på alt-tekst på alle bildene */
+
 const antallBilder = 18; // Antall bilder av Jarle i bildeMappe
 const bildeMappe = 'img/jarle/'; // Mappen hvor bildene er lagret
 const bildePrefix = 'jarle_'; // Prefix for bildefilene

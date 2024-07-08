@@ -10,7 +10,7 @@ if (browserTheme) {
     setTheme(browserTheme)
 }
 
-// [ ] Skrive om til å bruke localStorage fullstendig?
+// TODO: Skrive om til å bruke localStorage?
 function setTheme(theme) {
     bodyElement.setAttribute("data-theme", theme);
     currentTheme = theme;
