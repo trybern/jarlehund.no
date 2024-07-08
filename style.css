@@ -38,10 +38,6 @@
     --font-base: 18px;
 }
 
-body {
-    /* cursor: url("img/cursor.png"), auto; */
-}
-
 * {
     transition: 100ms ease-in-out;
 }
