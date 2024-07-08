@@ -1,0 +1,362 @@
+
+:root {
+    --dark: #241f18;
+    --light: #fff9ee;
+    --on-dark: #fff9ee;
+    --on-light: #241f18;
+    --dark-accent: #3d3222;
+    --light-accent: #ffe2ae;
+    --attention: #ff4c30;
+    --soft-attention: #fbc093;
+
+    --xs: 4px;
+    --sm: 8px;
+    --md: 16px;
+    --lg: 24px;
+    --xl: 40px;
+
+    --p-s: var(--sm);
+    --p-m: var(--md);
+    --p-l: var(--lg);
+
+    --m-s: var(--xs);
+    --m-m: var(--md);
+    --m-l: var(--xl);
+
+    --rad-s: 0px;
+    --rad-m: 8px;
+    --rad-l: 16px;
+    --rad-f: 1000px;
+
+    --font-main:  "skolar-pe-variable", serif;
+    --font-flair: "degular-display", serif;
+    --font-title: "degular-variable", sans-serif;
+    --font-normal: 360;
+    --font-bold: 666;
+    --breakpoint: 768px;
+    --font-base: 18px;
+}
+
+body {
+    cursor: url("img/cursor.png"), auto;
+}
+
+* {
+    transition: 100ms ease-in-out;
+}
+
+body[data-theme="default"],
+body[data-theme="light"] {
+    --primary: var(--light);
+    --on-primary: var(--on-light)
+}
+
+body[data-theme="dark"] {
+    --primary: var(--dark);
+    --on-primary: var(--on-dark);
+    --font-bold: 633;
+}
+
+body {
+    background: var(--primary);
+    color: var(--on-primary);
+    font-size: 1rem;
+    max-width: 52rem;
+}
+
+html {
+    margin: 0;
+    width: 100dvw;
+    font-size: var(--font-base);
+    text-rendering: geometricPrecision;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: round(0.75rem);   
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+/* Typografi */
+
+h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+    font-family: var(--font-title);
+    font-variation-settings: "wght" 650;
+    font-variant: unicase;
+}
+
+h1 {
+    letter-spacing: 0.2rem;
+    font-size: 8rem;
+    line-height: 0.75;
+
+    font-variation-settings: "wght" var(--font-bold), "opsz" 65;
+    margin: unset;
+    
+}
+
+h2 {
+    font-size: 6rem;
+    line-height: 1.15;
+
+    font-variation-settings: "wght" 700, "opsz" 60;
+    margin: unset;
+}
+
+h3 {
+    font-size: 4rem;
+    line-height: 1.15;
+
+    font-variation-settings: "wght" 700, "opsz" 40;
+
+    margin: unset;
+}
+
+h4 {
+    font-size: 3rem;
+    line-height: 1.3;
+    font-weight: 800;
+    margin: unset;
+
+    font-variation-settings: "wght" 700, "opsz" 25;
+
+}
+
+h5 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+    font-weight: 700;
+    margin: unset;}
+
+h6 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+    margin: unset;
+}
+
+p {
+    line-height: 1.6rem;
+    font-variation-settings: "wght" var(--font-normal);
+    letter-spacing: 0.01rem;
+}
+
+a {
+    font-variation-settings: "wght" 500;
+    text-decoration-color: var(--attention);
+    color: unset;
+}
+
+b, strong, .overline {
+    font-variation-settings: "wght" var(--font-bold);
+    letter-spacing: 0.025rem;
+}
+
+.subtitle, .overline {
+    margin: unset;
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+}
+
+.subtitle {
+    font-variation-settings: "opsz" 8, "wght" 620;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.25;
+    margin-bottom: 0.25rem;
+    
+}
+
+.overline {
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+}
+
+.flair {
+    font-family: var(--font-flair);
+}
+
+i {
+    font-variation-settings: "ital" 0;
+}
+
+ul {
+    list-style-type: '—     ';
+    padding-inline-start: 3rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+ul ::marker {
+    margin-right: 2rem;
+}
+
+
+
+header,
+section,
+footer {
+    padding: 2rem;
+}
+
+footer {
+    margin-top: 4rem;
+}
+
+button,
+.button-link {
+    padding: var(--p-m) var(--p-l);
+    border-radius: var(--rad-l);
+    border: none;
+    font-family: var(--font-title);
+    font-variation-settings: "wght" 700;
+    display: inline-block;
+    min-width: 36px;
+    transition: 150ms ease-in-out;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--on-light);
+    cursor: pointer;
+}
+
+.primary-btn {
+    color: var(--on-light);
+    background-color: var(--soft-attention);
+
+}
+
+#elevator-button {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+}
+
+
+.secondary-button {
+    background-color: var(--light-accent);
+    color: #1a1a1a;
+    display: none;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+
+.secondary-button:hover {
+    background-color: var(--soft-attention);
+}
+
+button:hover,
+.button-link:hover {
+    background-color: var(--light-accent);
+    cursor: pointer;
+
+}
+
+.icon-btn {
+    padding: 11px;
+    border-radius: var(--rad-f);
+    min-width: unset;
+
+    img {
+        height: 24px;
+        aspect-ratio: 1;
+    }
+    
+}
+
+.gjem {
+    display: none;
+}
+
+.nedtonet {
+    opacity: 0.7;
+}
+
+/* TODO Lage grid i CSS? */
+
+/* .toggle-icon {
+    background-image: url("img/bulb-on.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: 24px;
+    width: 24px;
+
+} */
+
+
+body[data-theme="dark"] .light-off {
+    display: none;
+}
+
+body[data-theme="default"] .light-on,
+body[data-theme="light"] .light-on {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        letter-spacing: unset;
+    }
+
+    h2 {
+        font-size: 3.25rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+    
+    h6 {
+        font-size: 0.9rem;
+    }
+
+    header,
+    section,
+    footer {
+        padding: 1rem;
+    }
+
+
+
+}
+
+/* JARLE */
+
+#bilde-container {
+    margin-bottom: 16px;
+}
+
+
+#jarle-bilde {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    max-height: 80dvh;
+}
