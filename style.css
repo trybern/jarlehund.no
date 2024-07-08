@@ -6,7 +6,8 @@
     --on-light: #241f18;
     --dark-accent: #3d3222;
     --light-accent: #ffe2ae;
-    --attention: #ff4c30;
+    /* --attention: #ff4c30; */
+    --attention: #fbc093;
     --soft-attention: #fbc093;
 
     --xs: 4px;
@@ -61,7 +62,7 @@ body {
     background: var(--primary);
     color: var(--on-primary);
     font-size: 1rem;
-    max-width: 52rem;
+    max-width: 40rem;
 }
 
 html {
@@ -154,7 +155,8 @@ p {
 
 a {
     font-variation-settings: "wght" 500;
-    text-decoration-color: var(--attention);
+/*     text-decoration-color: var(--attention); */
+    text-underline-offset: 4px;
     color: unset;
 }
 

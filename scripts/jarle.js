@@ -16,6 +16,8 @@ const jarleBilder = genererBildeListe();
 let forrigeBilde = -1 // For avsjekk i visTilfeldigBilde
 
 function visTilfeldigBilde() {
+    /* if (jarleBilder.length === 0) return; */
+
     let nyttBilde;
     do {
         nyttBilde = Math.floor(Math.random() * jarleBilder.length);
