@@ -236,7 +236,6 @@ button,
 .primary-button {
     color: var(--on-light);
     background-color: var(--soft-attention);
-
 }
 
 #elevator-button {
