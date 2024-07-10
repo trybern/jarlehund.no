@@ -1,4 +1,6 @@
-/* TODO: Lag json-fil med bildelenker, slik at vi kan automatisere telling OG legge på alt-tekst på alle bildene */
+/* TODO: Lag json-fil som holder stiene til bildene, samt ekstra data (les: alt-tekst og bildetekst) */
+/* TODO: Skriv alt-tekst til alle bilder */
+/* TODO: Skriv om til å hente antall (antallBilder), lenke og alt-tekst fra json */
 
 const antallBilder = 18; // Antall bilder av Jarle i bildeMappe
 const bildeMappe = 'img/jarle/'; // Mappen hvor bildene er lagret
