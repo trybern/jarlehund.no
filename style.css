@@ -241,6 +241,62 @@ button,
     right: 24px;
 }
 
+.center-items {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  #nedtelling {
+    text-align: center;
+    width: 100%;
+  }
+  
+  #nedtelling-tekst {
+    font-size: 24px;
+  }
+  
+  .enheter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50rem;
+    margin: auto;
+  }
+  
+  @media (min-width: 560px) {
+    .enheter {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }}
+  
+  
+  .enhet {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* text-align: center;
+    min-width: 3rem;
+    max-width: 4rem;
+    margin: auto; */
+  }
+  
+  .tall {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+  }
+  
+  .tid {
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+  }
+
+  .undertekst {
+    margin-top: 0;
+  }
 
 .secondary-button {
     background-color: var(--light-accent);
