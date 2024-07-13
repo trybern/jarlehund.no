@@ -202,8 +202,6 @@ ul ::marker {
     margin-right: 2rem;
 }
 
-
-
 header,
 section,
 footer {
@@ -384,9 +382,6 @@ body[data-theme="light"] .light-on {
     footer {
         padding: 1rem;
     }
-
-
-
 }
 
 /* JARLE */
