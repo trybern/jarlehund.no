@@ -4,7 +4,7 @@
 
 /* TODO Må få på noe komprimering på et tidspunkt */
 
-const antallBilder = 18; // Antall bilder av Jarle i bildeMappe
+const antallBilder = 55; // Antall bilder av Jarle i bildeMappe
 const bildeMappe = 'img/jarle/'; // Mappen hvor bildene er lagret
 const bildePrefix = 'jarle_'; // Prefix for bildefilene
 const bildeType = '.jpg'; // Filtype for bildene
