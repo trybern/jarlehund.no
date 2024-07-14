@@ -158,6 +158,7 @@ a {
 }
 
 b, strong, .overline {
+    font-family: var(--font-title);
     font-variation-settings: "wght" var(--font-bold);
     letter-spacing: 0.025rem;
 }
@@ -279,9 +280,10 @@ button,
   
   .tall {
     font-size: 3rem;
-    font-weight: 700;
     margin: 0;
     font-variant-numeric: tabular-nums;
+    font-family: var(--font-title);
+    font-variation-settings: "wght" var(--font-bold);
   }
   
   .tid {
@@ -396,4 +398,8 @@ body[data-theme="light"] .light-on {
     height: auto;
     border-radius: 12px;
     max-height: 80dvh;
+}
+
+.actions {
+    margin: 2rem 0;
 }
