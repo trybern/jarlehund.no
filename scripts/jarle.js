@@ -6,6 +6,8 @@
 
 
 
+
+// Lag album
 function genererBildeListe() {
   const antallBilder = 55; // Antall bilder av Jarle i bildeMappe
   const bildeMappe = 'img/jarle/'; // Mappen hvor bildene er lagret
@@ -18,12 +20,10 @@ function genererBildeListe() {
   return bildeListe;
 }
 
+// Vis et tilfeldig bilde når siden lastes og når knappen trykkes
 function visTilfeldigBilde() {
   const jarleBilder = genererBildeListe();
   let forrigeBilde = -1 // For avsjekk i visTilfeldigBilde 
-
-  /* if (jarleBilder.length === 0) return; */
-
   let nyttBilde;
 
   do {
@@ -35,12 +35,8 @@ function visTilfeldigBilde() {
   forrigeBilde = nyttBilde;
 }
 
-// Vis et tilfeldig bilde når siden lastes
 visTilfeldigBilde();
-
-// Legg til en event listener på knappen
 document.getElementById('nytt-bilde').addEventListener('click', visTilfeldigBilde);
-
 
 function countDown(target, current) {
   const timeDifference = target - current;
@@ -65,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log("Neste bursdag: ", new Date(targetDate).toDateString());
   // Tell ned
   const nedtellingInterval = setInterval(function () {
+    
     const currentDate = new Date();
 
     // Sjekk om det er bursdagen hans
