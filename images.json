@@ -1,152 +1,152 @@
 [
-    {
-      "title": "Jarle",
-      "url": "/img/jarle_1.jpg",
-      "alt": "Jarle ..."
-    },
-    {
-        "title": "Jarle",
-        "url": "/img/jarle_2.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_3.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_4.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_5.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_6.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_7.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_8.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_9.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_10.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_11.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_12.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_14.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_15.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_16.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_17.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_18.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_19.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_20.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_21.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_22.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_23.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_24.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_25.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_26.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_27.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_28.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_29.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_30.jpg",
-        "alt": "Jarle ..."
-      },
-      {
-        "title": "Jarle",
-        "url": "/img/jarle_31.jpg",
-        "alt": "Jarle ..."
-      }
-  ]
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_1.jpg",
+    "alt": "En ung Jarle, ved elva, som tar en pause fra å se på det som ser ut som måkenes landsmøte, ved å stirre inn i kameraet i stedet."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_2.jpg",
+    "alt": "En liten Jarle på spasertur gjennom byen, med Youngstorvet i bakgrunnen."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_3.jpg",
+    "alt": "En valpete Jarle som hviler på en trebenk på utested, med en halvliter Guinness i forgrunnen."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_4.jpg",
+    "alt": "Jarle i Pride-parken, smilende foran et skilt med teksten \"Husk dongtvang!\"."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_5.jpg",
+    "alt": "Jarle, med et stort smil, oppi en stor pappeske på et festivallager."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_6.jpg",
+    "alt": "Sett ovenfra, Jarle med et stort smil som kikker opp i kameraet, ruslende på våt asfalt."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_7.jpg",
+    "alt": "Jarle på kafé, og kamerainnstillinger som gjør at nesa hans ser kjempestor ut."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_8.jpg",
+    "alt": "Nærbilde av Jarle, med tungen som stikker litt ut, som ser på noe ved siden av kameraet."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_9.jpg",
+    "alt": "Jarle, som ser ut til å ha smakt på havvannet, foran Oslo-fjorden, med kornsiloer i horisonten."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_10.jpg",
+    "alt": "Et elegant bilde av Jarle som smiler, på fangen til en venn."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_11.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_12.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_14.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_15.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_16.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_17.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_18.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_19.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_20.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_21.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_22.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_23.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_24.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_25.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_26.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_27.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_28.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_29.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_30.jpg",
+    "alt": "Jarle ..."
+  },
+  {
+    "title": "Jarle",
+    "path": "/img/jarle/jarle_31.jpg",
+    "alt": "Jarle ..."
+  }
+]
