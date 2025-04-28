@@ -378,7 +378,6 @@ body[data-theme="light"] .light-on {
         font-size: 0.9rem;
     }
 
-
     header,
     section,
     footer {
@@ -403,20 +402,3 @@ body[data-theme="light"] .light-on {
 .actions {
     margin: 2rem 0;
 }
-
-/* Toolbar */
-
-/* .toolbar {
-    background-color: var(--primary-accent);
-    backdrop-filter: blur(16px);
-
-
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-
-    margin: var(--m-m);
-    padding: var(--p-s);
-    border-radius: var(--rad-l);
-    
-} */
