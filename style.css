@@ -98,15 +98,6 @@ h1, .tittel, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-/* .tittel {
-    letter-spacing: 0.2rem;
-    font-size: 4rem;
-    line-height: 0.75;
-    font-variation-settings: "wght" var(--font-bold), "opsz" 65;
-    margin: unset;
-    vertical-align: middle;
-} */
-
 h1 {
     font-size: 3.25rem;
     line-height: 1;
