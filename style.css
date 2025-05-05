@@ -220,6 +220,7 @@ button,
     cursor: pointer;
     color: var(--on-primary);
     border: 1px solid var(--primary);
+    touch-action: manipulation;
 }
 
 .primary-button {
