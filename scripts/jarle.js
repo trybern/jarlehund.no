@@ -1,11 +1,7 @@
 /* TODO: Lag json-fil som holder stiene til bildene, samt ekstra data (les: alt-tekst og bildetekst) */
 /* TODO: Skriv alt-tekst til alle bilder */
 /* TODO: Skriv om til å hente antall (antallBilder), lenke og alt-tekst fra json */
-
 /* TODO Må få på noe komprimering på et tidspunkt */
-
-
-
 
 // Lag album
 function genererBildeListe() {
@@ -26,10 +22,11 @@ async function fetchJarleData() {
 }
 
 // Vis et tilfeldig bilde når siden lastes og når knappen trykkes
-
 let forrigeBilde = -1 // For avsjekk i visTilfeldigBilde 
 
-function visTilfeldigBilde() {
+async function visTilfeldigBilde() {
+  const jarleData = await fetchJarleData();
+
   const jarleBilder = genererBildeListe();
   const jarleBilde = document.getElementById('jarle-bilde');
 
@@ -40,16 +37,21 @@ function visTilfeldigBilde() {
   }
 
   const bildeSti = jarleBilder[nyttBilde];
+  
   jarleBilde.src = bildeSti;
-  forrigeBilde = nyttBilde;
 
+  if (jarleData[nyttBilde].alt) {
+    jarleBilde.alt = jarleData[nyttBilde].alt; // Setter alt-tekst
+  } else {
+    jarleBilde.alt = "Dette Jarle-bildet har jeg ikke rukket å skrive en alternativ tekst til. Beklager!"; // Setter default alt-tekst
+  }
+  
   console.log(`Du ser nå på bilde nr. ${nyttBilde + 1} av ${jarleBilder.length}`);
+  forrigeBilde = nyttBilde;
 }
 
 visTilfeldigBilde();
 document.getElementById('nytt-bilde').addEventListener('click', visTilfeldigBilde);
-
-
 
 // Tell ned til bursdagen
 function countDown(target, current) {
