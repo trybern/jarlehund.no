@@ -20,24 +20,38 @@ function genererBildeListe() {
   return bildeListe;
 }
 
+async function fetchJarleData() {
+  const response = await fetch('images.json'); // Fil med alt-tekster
+  return await response.json();
+}
+
 // Vis et tilfeldig bilde når siden lastes og når knappen trykkes
+
+let forrigeBilde = -1 // For avsjekk i visTilfeldigBilde 
+
 function visTilfeldigBilde() {
   const jarleBilder = genererBildeListe();
-  let forrigeBilde = -1 // For avsjekk i visTilfeldigBilde 
+  const jarleBilde = document.getElementById('jarle-bilde');
+
   let nyttBilde;
 
-  do {
+  while (nyttBilde === forrigeBilde || nyttBilde === undefined) {
     nyttBilde = Math.floor(Math.random() * jarleBilder.length);
-  } while ( nyttBilde === forrigeBilde && jarleBilder.length > 1 );
+  }
 
   const bildeSti = jarleBilder[nyttBilde];
-  document.getElementById('jarle-bilde').src = bildeSti;
+  jarleBilde.src = bildeSti;
   forrigeBilde = nyttBilde;
+
+  console.log(`Du ser nå på bilde nr. ${nyttBilde + 1} av ${jarleBilder.length}`);
 }
 
 visTilfeldigBilde();
 document.getElementById('nytt-bilde').addEventListener('click', visTilfeldigBilde);
 
+
+
+// Tell ned til bursdagen
 function countDown(target, current) {
   const timeDifference = target - current;
     // Tell dager, timer, minutter og sekunder
