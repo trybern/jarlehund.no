@@ -12,7 +12,8 @@ function genererBildeListe() {
   const bildeListe = [];
   for (let i = 1; i <= antallBilder; i++) {
       bildeListe.push(`${bildeMappe}${bildePrefix}${i}${bildeType}`);
-  }
+    }
+  
   return bildeListe;
 }
 
@@ -27,7 +28,13 @@ let forrigeBilde = -1 // For avsjekk i visTilfeldigBilde
 async function visTilfeldigBilde() {
   const jarleData = await fetchJarleData();
 
-  const jarleBilder = genererBildeListe();
+  const jarleBilder = genererBildeListe().map((valgtBilde, index) => ({
+    src: valgtBilde,
+    alt: Array.isArray(jarleData) && jarleData[index]?.alt 
+      ? jarleData[index].alt 
+      : "Dette Jarle-bildet har jeg ikke rukket å skrive en alternativ tekst til. Beklager!"
+  }));
+  
   const jarleBilde = document.getElementById('jarle-bilde');
 
   let nyttBilde;
@@ -36,15 +43,10 @@ async function visTilfeldigBilde() {
     nyttBilde = Math.floor(Math.random() * jarleBilder.length);
   }
 
-  const bildeSti = jarleBilder[nyttBilde];
+  const valgtBilde = jarleBilder[nyttBilde];
   
-  jarleBilde.src = bildeSti;
-
-  if (jarleData[nyttBilde].alt) {
-    jarleBilde.alt = jarleData[nyttBilde].alt; // Setter alt-tekst
-  } else {
-    jarleBilde.alt = "Dette Jarle-bildet har jeg ikke rukket å skrive en alternativ tekst til. Beklager!"; // Setter default alt-tekst
-  }
+  jarleBilde.src = valgtBilde.src;
+  jarleBilde.alt = valgtBilde.alt;
   
   console.log(`Du ser nå på bilde nr. ${nyttBilde + 1} av ${jarleBilder.length}`);
   forrigeBilde = nyttBilde;
