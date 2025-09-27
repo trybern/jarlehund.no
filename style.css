@@ -92,7 +92,6 @@ h1, .tittel, h2, h3, h4, h5, h6 {
     /* width: 100%; */
     font-family: var(--font-title);
     font-variation-settings: "wght" 650;
-    font-weight: bold;
 }
 
 h1 {
@@ -115,7 +114,7 @@ h2 {
 h3 {
     font-size: 3rem;
     line-height: 1.3;
-    font-weight: 800;
+    font-variation-settings: "wght" 800;
     margin: unset;
 
     font-variation-settings: "wght" 700, "opsz" 25;
@@ -125,14 +124,14 @@ h3 {
 h4 {
     font-size: 2.25rem;
     line-height: 1.3;
-    font-weight: 700;
+    font-variation-settings: "wght" 700;
     margin: unset;
 }
 
 h5 {
     font-size: 1.5rem;
     line-height: 1.3;
-    font-weight: 700;
+    font-variation-settings: "wght" 700;
     margin: unset;
 }
 
@@ -206,9 +205,9 @@ button,
     padding: var(--p-m) var(--p-l);
     border-radius: var(--rad-l);
     border: none;
-    font-variation-settings: "wght" 700;
+    font-variation-settings: "wght" 600;
     display: inline-block;
-    min-width: 36px;
+    min-width: 2.25rem;
     transition: 150ms ease-in-out;
     font-size: 1rem;
     text-decoration: none;
@@ -279,7 +278,7 @@ font-variation-settings: "wght" var(--font-bold);
 font-size: 0.8rem;
 margin-top: 0.75rem;
 text-transform: uppercase;
-font-weight: 600;
+font-variation-settings: "wght" 600;
 letter-spacing: 0.05rem;
 }
 
@@ -308,12 +307,11 @@ button:hover,
     padding: 11px;
     border-radius: var(--rad-f);
     min-width: unset;
+}
 
-    img {
-        height: 24px;
-        aspect-ratio: 1;
-    }
-    
+.icon-btn img {
+    height: 24px;
+    aspect-ratio: 1;
 }
 
 .gjem {
@@ -334,16 +332,16 @@ body[data-theme="light"] .light-on {
     display: none;
 }
 
+.tittel {
+    font-size: 2rem;
+    letter-spacing: unset;
+}
+
 @media screen and (max-width: 768px) {
 
 
     html {
         font-size: 16px;
-    }
-
-    .tittel {
-        font-size: 4rem;
-        letter-spacing: unset;
     }
 
     h1 {
