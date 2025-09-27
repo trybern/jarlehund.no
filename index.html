@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/bbv1kee.css">
+  <link rel="stylesheet" href="style.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Jarle • Welsh Corgi Cardigan • Oslo" data-rh="true">
-    <meta name="description" content="Jarle er en liten korgi med et stort hjerte. Du finner ham på din nærmeste nabolagspub." data-rh="true">
-    <meta name="robots" content="index,follow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Jarle • Welsh Corgi Cardigan • Oslo" data-rh="true">
+  <meta name="description" content="Jarle er en liten korgi med et stort hjerte. Du finner ham på din nærmeste nabolagspub." data-rh="true">
+  <meta name="robots" content="index,follow">
 
-    <title>Jarle</title>
-    <link rel="icon" type="image/svg" href="img/favicon.ico">
-    
-    <!-- + Open Graph -->
-    <meta property="og:title" content="Jarle – en Welsh Corgi Cardigan i Oslo">
-    <meta property="og:locale" content="nb_NO">
-    <meta property="og:description" content="Jarle er en liten korgi med et stort hjerte. Du finner ham på din nærmeste nabolagspub.">
-    <meta property="og:image" content="img/metabilde.jpg">
-    <meta property="og:image:width" content="1200px">
-    <meta property="og:image:height" content="630px">
-    <meta property="og:image:alt" content="En yndig liten Jarle ligger på gulvet, med benene bakover, i det korgientustiaster ville kalt en 'sploot'.">
-    <meta property="og:image:type" content="image/jpg">
+  <title>Jarle</title>
+  <link rel="icon" type="image/svg" href="img/favicon.ico">
+  
+  <!-- + Open Graph -->
+  <meta property="og:title" content="Jarle – en Welsh Corgi Cardigan i Oslo">
+  <meta property="og:locale" content="nb_NO">
+  <meta property="og:description" content="Jarle er en liten korgi med et stort hjerte. Du finner ham på din nærmeste nabolagspub.">
+  <meta property="og:image" content="img/metabilde.jpg">
+  <meta property="og:image:width" content="1200px">
+  <meta property="og:image:height" content="630px">
+  <meta property="og:image:alt" content="En yndig liten Jarle ligger på gulvet, med benene bakover, i det korgientustiaster ville kalt en 'sploot'.">
+  <meta property="og:image:type" content="image/jpg">
 
 </head>
 <body style="text-align: center; margin: auto;" data-theme="default">
-    <header>
-        <h1 class="tittel">Jarle</h1>
-        <button id="nytt-bilde" class="primary-button">Mer Jarle!</button>
-    </header>
 
-    <!-- TODO Få til litt layoutstabilitet på bildet -->
-    <section style="padding-top: unset;">
-        <div id="bilde-container">
-            <img id="jarle-bilde" src="" alt="Et tilfeldig bilde av Jarle, en søt, liten korgi med rødbrun pels med innslag av nyanser, svart og hvitt, oftest med et stort smil og tunga ute (lover at jeg skal fikse alt-tekster til alle bildene som et av neste steg!)">
+  <header>
+    <h1 class="tittel">Jarle</h1>
+    <button id="nytt-bilde" class="primary-button">Mer Jarle!</button>
+  </header>
+
+  <!-- TODO Få til litt layoutstabilitet på bildet -->
+  <section style="padding-top: unset;">
+    <div id="bilde-container">
+        <img id="jarle-bilde" src="" alt="Et tilfeldig bilde av Jarle, en søt, liten korgi med rødbrun pels med innslag av nyanser, svart og hvitt, oftest med et stort smil og tunga ute (lover at jeg skal fikse alt-tekster til alle bildene som et av neste steg!)">
+    </div>
+  </section>
+  
+  <section>
+    <h2 >Lille Jarle i store Oslo</h2>
+    <p>Jarle er en kul hund av typen «Welsh Corgi Cardigan», som lever et deilig hundeliv i Oslo. Alle er Jarles beste venn.</p>
+    <p>Han har vært smørblid siden han ble født 27. juli 2023. Flere bamser har allerede tapt i strid mot ham. Jarle møter alltid bartendere med invitasjon til kos, før den lange turen rett før møtet henter ham inn og han dupper av.</p>
+    <p>Lurer du selv på serveringssteder som tillater hund kan han anbefale å sjekke <a href="https://hundioslo.no/steder-a-ga-med-hund-31384s.html">kartet til hundioslo.no</a>.</p>
+    
+    <div class="actions">
+
+      <a href="https://www.instagram.com/jarle_hund/"
+      class="button-link external primary-button" 
+      id="Instagram" 
+      target="_blank" 
+      title="Se Instagram-profil">
+        Instagram
+      </a>
+
+      <button 
+      class="icon-btn primary-button" 
+      id="theme-toggle"
+      title="Bytt mellom lyst og mørkt tema">
+        <img class="light-on" src="img/bulb-on.svg">
+        <img class="light-off" src="img/bulb-off.svg">
+      </button>
+
+    </div>
+  </section>
+
+  <section class="center-items">
+    <div id="nedtelling">
+      <div class="enheter">
+        <div class="enhet">
+          <p id="days" class="tall">000</p>
+          <p class="tid">dager</p>
         </div>
+        <div class="enhet">
+          <p id="hours" class="tall">00</p>
+          <p class="tid">timer</p>
+        </div>
+        <div class="enhet">
+          <p id="minutes" class="tall">00</p>
+          <p class="tid">minutter</p>
+        </div>
+        <div class="enhet">
+          <p id="seconds" class="tall">00</p>
+          <p class="tid">sekunder</p>
+        </div>
+      </div>
+      <p class="undertekst">igjen til <stong>27. juli</stong> og Jarles bursdag</p>
+    </div>
     </section>
-    <section>
-        <h2 >Lille Jarle i store Oslo</h2>
-        <p>Jarle er en kul hund av typen «Welsh Corgi Cardigan», som lever et deilig hundeliv i Oslo. Alle er Jarles beste venn.</p>
-        <p>Han har vært smørblid siden han ble født 27. juli 2023. Flere bamser har allerede tapt i strid mot ham. Jarle møter alltid bartendere med invitasjon til kos, før den lange turen rett før møtet henter ham inn og han dupper av.</p>
-        <p>Lurer du selv på serveringssteder som tillater hund kan han anbefale å sjekke <a href="https://hundioslo.no/steder-a-ga-med-hund-31384s.html">kartet til hundioslo.no</a>.</p>
-        
-        <div class="actions">
-        <a href="https://www.instagram.com/jarle_hund/"
-        class="button-link external primary-button" 
-        id="Instagram" 
-        target="_blank" 
-        title="Se Instagram-profil">
-            Instagram
-        </a>
-        <button 
-        class="icon-btn primary-button" 
-        id="theme-toggle"
-        title="Bytt mellom lyst og mørkt tema">
-            <img class="light-on" src="img/bulb-on.svg">
-            <img class="light-off" src="img/bulb-off.svg">
-        </button>
-        </div>
-    </section>
-
-    <section class="center-items">
-        <div id="nedtelling">
-          <div class="enheter">
-            <div class="enhet">
-              <p id="days" class="tall">000</p>
-              <p class="tid">dager</p>
-            </div>
-            <div class="enhet">
-              <p id="hours" class="tall">00</p>
-              <p class="tid">timer</p>
-            </div>
-            <div class="enhet">
-              <p id="minutes" class="tall">00</p>
-              <p class="tid">minutter</p>
-            </div>
-            <div class="enhet">
-              <p id="seconds" class="tall">00</p>
-              <p class="tid">sekunder</p>
-            </div>
-          </div>
-          <p class="undertekst">igjen til <stong>27. juli</stong> og Jarles bursdag</p>
-        </div>
-        </section>
 
 
-    <footer>
-        <p>Laget med 🧡</p>
-    </footer>
-    <script src="scripts/jarle.js"></script>
-    <script src="scripts/theme-switcher.js"></script>
+  <footer>
+    <p>Laget med 🧡</p>
+  </footer>
+  <script src="scripts/jarle.js"></script>
+  <script src="scripts/theme-switcher.js"></script>
+
 </body>
 </html>

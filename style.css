@@ -30,9 +30,9 @@
     --rad-l: 16px;
     --rad-f: 1000px;
 
-    --font-main:  "skolar-pe-variable", serif;
-    --font-flair: "degular-display", serif;
-    --font-title: "degular-variable", sans-serif;
+    --font-main:  "Parkinsans", serif;
+    --font-flair: "Playwrite NO", sans-serif;
+    --font-title: "Playwrite NO", sans-serif;
     --font-normal: 360;
     --font-bold: 666;
     --breakpoint: 768px;
@@ -41,6 +41,8 @@
 
 * {
     transition: 100ms ease-in-out;
+    font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
 }
 
 body[data-theme="default"],
@@ -61,15 +63,17 @@ body[data-theme="dark"] {
 body {
     background: var(--primary);
     color: var(--on-primary);
-    font-size: 1rem;
     max-width: 40rem;
+    margin: 0;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-variation-settings: "wght" var(--font-normal);
 }
 
 html {
     margin: 0;
     width: 100dvw;
     font-size: var(--font-base);
-    text-rendering: geometricPrecision;
 }
 
 img {
@@ -82,19 +86,12 @@ img {
     shape-margin: round(0.75rem);   
 }
 
-body {
-    margin: 0;
-    font-family: var(--font-main);
-    font-size: 1rem;
-}
-
 /* Typografi */
 
 h1, .tittel, h2, h3, h4, h5, h6 {
     /* width: 100%; */
     font-family: var(--font-title);
     font-variation-settings: "wght" 650;
-    font-variant: unicase;
     font-weight: bold;
 }
 
@@ -102,7 +99,7 @@ h1 {
     font-size: 3.25rem;
     line-height: 1;
 
-    font-variation-settings: "wght" 700, "opsz" 30;
+    font-variation-settings: "wght" 600, "opsz" 30;
     margin: unset;
 }
 
@@ -209,7 +206,6 @@ button,
     padding: var(--p-m) var(--p-l);
     border-radius: var(--rad-l);
     border: none;
-    font-family: var(--font-title);
     font-variation-settings: "wght" 700;
     display: inline-block;
     min-width: 36px;
