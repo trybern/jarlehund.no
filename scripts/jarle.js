@@ -6,9 +6,9 @@
 // Lag album
 function genererBildeListe() {
   const antallBilder = 55; // Antall bilder av Jarle i bildeMappe
-  const bildeMappe = 'img/jarle/'; // Mappen hvor bildene er lagret
+  const bildeMappe = 'img/jarle/avif/'; // Mappen hvor bildene er lagret
   const bildePrefix = 'jarle_'; // Prefix for bildefilene
-  const bildeType = '.jpg'; // Filtype for bildene
+  const bildeType = '.avif'; // Filtype for bildene
   const bildeListe = [];
   for (let i = 1; i <= antallBilder; i++) {
       bildeListe.push(`${bildeMappe}${bildePrefix}${i}${bildeType}`);
